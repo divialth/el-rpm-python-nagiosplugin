@@ -67,5 +67,5 @@ rm -rf html/.{doctrees,buildinfo}
 %license LICENSE.txt
 
 %changelog
-*  - 1.3.2-1
+* Fri Jul 10 2020 divialth <65872926+divialth@users.noreply.github.com> 1.3.2-1
 - Initial package.
