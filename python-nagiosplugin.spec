@@ -14,6 +14,7 @@ BuildArch:      noarch
 BuildRequires:  python%{python3_pkgversion}-devel
 BuildRequires:  python%{python3_pkgversion}-setuptools
 BuildRequires:  python%{python3_pkgversion}-sphinx
+BuildRequires:  python3-sphinx
 
 %description
 The nagiosplugin library About **nagiosplugin** is a Python class library which
