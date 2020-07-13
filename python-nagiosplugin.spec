@@ -1,5 +1,6 @@
 # Created by pyp2rpm-3.3.4
 %global pypi_name nagiosplugin
+%global python34_pkgversion 34
 %global sphinx_version 3.6
 
 Name:           python-%{pypi_name}
