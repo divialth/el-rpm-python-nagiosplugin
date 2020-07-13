@@ -14,7 +14,6 @@ BuildArch:      noarch
 BuildRequires:  python%{python3_pkgversion}-devel
 BuildRequires:  python%{python3_pkgversion}-setuptools
 BuildRequires:  python%{python3_pkgversion}-sphinx
-BuildRequires:  python3-sphinx
 BuildRequires:  python%{python3_pkgversion}-sphinx_rtd_theme
 
 %description
@@ -49,7 +48,7 @@ rm -rf %{pypi_name}.egg-info
 %build
 %{__python3} setup.py build
 # generate html docs
-PYTHONPATH=${PWD} sphinx-build-3 doc html
+PYTHONPATH=${PWD} sphinx-build-%{python3_pkgversion} doc html
 # remove the sphinx-build leftovers
 rm -rf html/.{doctrees,buildinfo}
 
