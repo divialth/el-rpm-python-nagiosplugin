@@ -65,7 +65,7 @@ rm -rf html/.{doctrees,buildinfo}
 %{python3_sitelib}/%{pypi_name}-%{version}-py%{python3_version}.egg-info
 
 %files -n python-%{pypi_name}-doc
-%doc html
+#%doc html
 %license LICENSE.txt
 
 %changelog
