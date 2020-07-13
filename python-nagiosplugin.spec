@@ -1,9 +1,12 @@
 # Created by pyp2rpm-3.3.4
 %global pypi_name nagiosplugin
-%global __python34 /usr/bin/python3.4
-%global python34_pkgversion 34
-%global python34_sitelib /usr/lib/python3.4/site-packages
 %global sphinx_version 3.6
+
+%global python34_pkgversion 34
+%global python34_version 3.4
+%global python34_sitelib /usr/lib/python%{python34_version}/site-packages
+%global __python34 /usr/bin/python%{python34_version}
+
 
 Name:           python-%{pypi_name}
 Version:        1.3.2
