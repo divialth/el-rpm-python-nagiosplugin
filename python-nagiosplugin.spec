@@ -52,6 +52,8 @@ rm -rf %{pypi_name}.egg-info
 #PYTHONPATH=${PWD} sphinx-build-%{sphinx_version} doc html
 # remove the sphinx-build leftovers
 rm -rf html/.{doctrees,buildinfo}
+# remove examples
+rm -rf examples
 
 %install
 %{__python3} setup.py install --skip-build --root %{buildroot}
