@@ -17,6 +17,9 @@ BuildRequires:  python%{python3_pkgversion}-setuptools
 BuildRequires:  python%{python3_pkgversion}-sphinx
 BuildRequires:  python%{python3_pkgversion}-sphinx_rtd_theme
 
+BuildRequires:  python%{python34_pkgversion}-devel
+BuildRequires:  python%{python34_pkgversion}-setuptools
+
 %description
 The nagiosplugin library About **nagiosplugin** is a Python class library which
 helps writing Nagios (or Icinga) compatible plugins easily in Python. It cares
