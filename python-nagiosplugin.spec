@@ -1,5 +1,6 @@
 # Created by pyp2rpm-3.3.4
 %global pypi_name nagiosplugin
+%global sphinx_version 3.6
 
 Name:           python-%{pypi_name}
 Version:        1.3.2
@@ -48,7 +49,7 @@ rm -rf %{pypi_name}.egg-info
 %build
 %{__python3} setup.py build
 # generate html docs
-PYTHONPATH=${PWD} sphinx-build-%{python3_pkgversion} doc html
+PYTHONPATH=${PWD} sphinx-build-%{sphinx_version} doc html
 # remove the sphinx-build leftovers
 rm -rf html/.{doctrees,buildinfo}
 
